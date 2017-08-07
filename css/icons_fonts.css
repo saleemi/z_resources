@@ -1,0 +1,187 @@
+/*
+RTL for fontawesome by:zaahib
+*/
+
+.z-ar .fa-arrow-left:before {content:"\f061"}
+
+.z-ar .fa-arrow-right:before {content:"\f060"}
+
+/**************** Social icons ********************/
+@font-face {
+    font-family: 'socicon';
+    src: url('../fonts/socicon-webfont.eot');
+    src: url('../fonts/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socicon-webfont.woff') format('woff'),
+         url('../fonts/socicon-webfont.ttf') format('truetype'),
+         url('../fonts/socicon-webfont.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.socicon {
+    font-family: 'socicon' !important;
+}
+
+.socicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.socicon:empty{
+    width: 1em;
+}
+
+.socicon-easid:before { content: "5"; }
+.socicon-twitter:before { content: "a"; }
+.socicon-facebook:before { content: "b"; }
+.socicon-google:before { content: "c"; }
+.socicon-pinterest:before { content: "d"; }
+.socicon-foursquare:before { content: "e"; }
+.socicon-yahoo:before { content: "f"; }
+.socicon-skype:before { content: "g"; }
+.socicon-yelp:before { content: "h"; }
+.socicon-feedburner:before { content: "i"; }
+.socicon-linkedin:before { content: "j"; }
+.socicon-viadeo:before { content: "k"; }
+.socicon-xing:before { content: "l"; }
+.socicon-myspace:before { content: "m"; }
+.socicon-soundcloud:before { content: "n"; }
+.socicon-spotify:before { content: "o"; }
+.socicon-grooveshark:before { content: "p"; }
+.socicon-lastfm:before { content: "q"; }
+.socicon-youtube:before { content: "r"; }
+.socicon-vimeo:before { content: "s"; }
+.socicon-dailymotion:before { content: "t"; }
+.socicon-vine:before { content: "u"; }
+.socicon-flickr:before { content: "v"; }
+.socicon-500px:before { content: "w"; }
+.socicon-instagram:before { content: "x"; }
+.socicon-wordpress:before { content: "y"; }
+.socicon-tumblr:before { content: "z"; }
+.socicon-blogger:before { content: "A"; }
+.socicon-technorati:before { content: "B"; }
+.socicon-reddit:before { content: "C"; }
+.socicon-dribbble:before { content: "D"; }
+.socicon-stumbleupon:before { content: "E"; }
+.socicon-digg:before { content: "F"; }
+.socicon-envato:before { content: "G"; }
+.socicon-behance:before { content: "H"; }
+.socicon-delicious:before { content: "I"; }
+.socicon-deviantart:before { content: "J"; }
+.socicon-forrst:before { content: "K"; }
+.socicon-play:before { content: "L"; }
+.socicon-zerply:before { content: "M"; }
+.socicon-wikipedia:before { content: "N"; }
+.socicon-apple:before { content: "O"; }
+.socicon-flattr:before { content: "P"; }
+.socicon-github:before { content: "Q"; }
+.socicon-chimein:before { content: "R"; }
+.socicon-friendfeed:before { content: "S"; }
+.socicon-newsvine:before { content: "T"; }
+.socicon-identica:before { content: "U"; }
+.socicon-bebo:before { content: "V"; }
+.socicon-zynga:before { content: "W"; }
+.socicon-steam:before { content: "X"; }
+.socicon-xbox:before { content: "Y"; }
+.socicon-windows:before { content: "Z"; }
+.socicon-outlook:before { content: "1"; }
+.socicon-coderwall:before { content: "2"; }
+.socicon-tripadvisor:before { content: "3"; }
+.socicon-netcodes:before { content: "4"; }
+.socicon-lanyrd:before { content: "7"; }
+.socicon-slideshare:before { content: "8"; }
+.socicon-buffer:before { content: "9"; }
+.socicon-rss:before { content: ","; }
+.socicon-vkontakte:before { content: ";"; }
+.socicon-disqus:before { content: ":"; }
+
+
+
+/************* Zaahib icon **************/
+
+@font-face {
+    font-family: 'zaahib-1regular';
+    src: url('../fonts/zaahib-1-webfont.eot');
+    src: url('../fonts/zaahib-1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/zaahib-1-webfont.woff2') format('woff2'),
+         url('../fonts/zaahib-1-webfont.woff') format('woff'),
+         url('../fonts/zaahib-1-webfont.ttf') format('truetype'),
+         url('../fonts/zaahib-1-webfont.svg#zaahib-1regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.zaahib-font{
+font-family: 'zaahib-1regular' !important;
+font-style: normal!important;
+font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+i.zaahib-font{
+width:1em!important;height:1em!important;
+display:inline-block!important;
+}
+
+.z-ar i.zaahib-font {
+    direction: ltr;
+}
+
+i.z-ico-Beds:before {content: "1";}
+i.z-ico-Baths:before {content: "2";}
+i.z-ico-GarageSize:before {content: "3";}
+
+i.z-ico-SquareMeter:before {content: "D";}
+i.z-ico-YearBuilt:before {content: "D";}
+i.z-ico-Rooms:before {content: "D";}
+i.z-ico-OfficeRooms:before {content: "D";}
+i.z-ico-Units:before {content: "D";}
+i.z-ico-NumberOfLevels:before {content: "D";}
+i.z-ico-LevelNo:before {content: "D";}
+
+i.z-ico-Electricity:before {content: "a";}
+i.z-ico-Water:before {content: "C";}
+i.z-ico-Gas:before {content: "h";}
+i.z-ico-Phone:before {content: "i";}
+i.z-ico-Internet:before {content: "n";}
+i.z-ico-Furnished:before {content: "b";}
+i.z-ico-Basement:before {content: "e";}
+i.z-ico-SwimmingPool:before {content: "g";}
+i.z-ico-ModernDesign:before {content: "k";}
+i.z-ico-AC:before {content: "m";}
+i.z-ico-CentralAC:before {content: "f";}
+i.z-ico-FullKitchen:before {content: "j";}
+i.z-ico-SpaHotTub:before {content: "l";}
+i.z-ico-DisabilityFeatures:before {content: "t";}
+i.z-ico-ExternalExtension:before {content: "p";}
+i.z-ico-RoomForMaid:before {content: "d";}
+i.z-ico-RoomForDriver:before {content: "w";}
+i.z-ico-RoomforDriver:before {content: "w";}
+i.z-ico-SecurityGaurds:before {content: "q";}
+i.z-ico-SecurityCameras:before {content: "A";}
+i.z-ico-Fireplace:before {content: "c";}
+i.z-ico-Residential:before {content: "s";}
+i.z-ico-Commercial:before {content: "u";}
+i.z-ico-WorkersResidence:before {content: "y";}
+i.z-ico-SinglesFriendly:before {content: "v";}
+i.z-ico-CityView:before {content: "o";}
+i.z-ico-SeaView:before {content: "f";}
+i.z-ico-Waterfront:before {content: "f";}
+i.z-ico-Garden:before {content: "x";}
+i.z-ico-Elevator:before {content: "z";}
+i.z-ico-OpenSpaceStyle:before {content: "B";}
+
+i.z-ico-Hall:before {content: "D";}
+i.z-ico-NewBuildNotUsed:before {content: "D";}
+i.z-ico-StorageRoom:before {content: "D";}
+i.z-ico-SecurityRoom:before {content: "D";}
+i.z-ico-PropertyFinalizing:before {content: "D";}
