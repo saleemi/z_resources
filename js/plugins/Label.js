@@ -4,6 +4,8 @@ function Label(opt_options) {
     div.style.cssText = 'position: absolute; display: none;';
 };
 
+var touchProgress = 0;
+
 Label.prototype = new google.maps.OverlayView;
 
 Label.prototype.onAdd = function () {
@@ -19,7 +21,7 @@ Label.prototype.onAdd = function () {
                function () { me.draw(); }),
           google.maps.event.addListener(this, 'zindex_changed',
                function () { me.draw(); })
-     ];
+    ];
 
     //add element to clickable layer 
     this.getPanes().overlayMouseTarget.appendChild(this.div_);
@@ -29,9 +31,24 @@ Label.prototype.onAdd = function () {
 
     // Add a listener - we'll accept clicks anywhere on this div, but you may want
     // to validate the click i.e. verify it occurred in some portion of your overlay.
-    google.maps.event.addDomListener(this.div_, 'click', function () {
-        google.maps.event.trigger(me, 'click');
-    });
+    if (appType != "ios") {
+        google.maps.event.addDomListener(this.div_, 'click', function () {
+            google.maps.event.trigger(me, 'click');
+        });
+    }
+    else {
+        this.div_.addEventListener("touchstart", function () {
+            touchProgress = 1;
+        });
+        this.div_.addEventListener("touchmove", function () {
+            touchProgress = 2;
+        });
+        this.div_.addEventListener("touchend", function () {
+            if (me.getMap().disableDefaultUI == false && touchProgress == 1) {
+                google.maps.event.trigger(me, 'click');
+            }
+        });
+    }
 };
 
 // Implement onRemove
@@ -71,6 +88,11 @@ Label.prototype.draw = function () {
             div.innerHTML = this.get('text').toString();
         if (this.get('title') != undefined)
             div.title = this.get('title').toString();
+
+        var divObj = $(div);
+
+        div.style.left = position.x - parseInt(divObj.css('width').replace('px', '')) + 'px';
+        div.style.top = position.y - parseInt(divObj.css('height').replace('px', '')) + 'px';
     }
 };
 
